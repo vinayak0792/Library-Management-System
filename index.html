@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.850-47-3740
+-->
+<html>
+    <head>
+        <title>Library</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header> Check OUT </header> 
+       <form action="checkout.jsp" method="post">
+            <table>
+                <tr><td>ISBN:</td><td><input type="text" name="isbn" /></td></tr>
+                <tr><td> Card_id:</td><td><input type="text" name="card_id" /></td></tr>
+           
+                <br>
+            </table>
+            <input type="submit" />
+            <br>
+        </form>
+        <br/>
+        
+        <header> Check IN Books </header>
+               <form action="checkin.jsp" method="post">
+            <table>
+                <tr><td>Details:</td><td><input type="text" name="details" /></td></tr>
+                
+           
+                <br>
+            </table>
+            <input type="submit" />
+            <br>
+        </form>
+        
+        <br/>
+        
+        <header> FINES </header> 
+        
+  <form action="fine1.jsp" method="post">
+                ISBN:<input type="text" name="isbn" />
+                Card_id:<input type="text" name="card_id" />
+                
+                <select name="button">
+                <option value="2" >Overdue</option>
+                <option value="1" >fines</option>
+                <option value="3">Calculate fines</option>
+                
+                </select> 
+               <input type="submit" />
+            
+        </form>
+        <br/>
+      <header> Search bar </header>
+               <form action="newjsp.jsp" method="post">
+            <table>
+                <tr><td>Details:</td><td><input type="text" name="details" /></td></tr>
+                
+           
+                <br>
+            </table>
+            <input type="submit" />
+            <br>
+        </form>  
+      
+      <br/>
+      
+      <header> New user </header>
+         <form action="newsuer.jsp" method="post">
+            <table>
+                <tr><td>First name :</td><td><input type="text" name="fname" /></td></tr>
+                <tr><td>Last name :</td><td><input type="text" name="lname" /></td></tr>
+                <tr><td>SSN :</td><td><input type ="text" name ="ssn" ></td></tr>
+                <tr><td>Address :</td><td><input type="text" name = "address"></td></tr>
+                <tr><td>Phone :</td><td><input type ="text" name = "phone"></td></tr>
+                <br>
+            </table>
+            <input type="submit" />
+            <br>
+        </form>
+        
+    </body>
+</html>
